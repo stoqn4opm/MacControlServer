@@ -13,6 +13,9 @@
 		5E25A0E01B5416F10069D163 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E25A0DF1B5416F10069D163 /* Images.xcassets */; };
 		5E25A0E31B5416F10069D163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E25A0E11B5416F10069D163 /* Main.storyboard */; };
 		5E25A0EF1B5416F10069D163 /* MacControlServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E25A0EE1B5416F10069D163 /* MacControlServerTests.m */; };
+		5E7C89F91B541800009D4EDA /* MCAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89F81B541800009D4EDA /* MCAppManager.m */; };
+		5E7C89FC1B5418F6009D4EDA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89FB1B5418F6009D4EDA /* GCDAsyncSocket.m */; };
+		5E7C8A001B5419AA009D4EDA /* MCMouseKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,12 @@
 		5E25A0E81B5416F10069D163 /* MacControlServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacControlServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E25A0ED1B5416F10069D163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E25A0EE1B5416F10069D163 /* MacControlServerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacControlServerTests.m; sourceTree = "<group>"; };
+		5E7C89F71B541800009D4EDA /* MCAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAppManager.h; sourceTree = "<group>"; };
+		5E7C89F81B541800009D4EDA /* MCAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAppManager.m; sourceTree = "<group>"; };
+		5E7C89FA1B5418F6009D4EDA /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = GCDAsyncSocket/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5E7C89FB1B5418F6009D4EDA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = GCDAsyncSocket/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		5E7C89FE1B5419AA009D4EDA /* MCMouseKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMouseKeyboardController.h; path = MouseKeyboardController/MCMouseKeyboardController.h; sourceTree = "<group>"; };
+		5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMouseKeyboardController.m; path = MouseKeyboardController/MCMouseKeyboardController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +88,12 @@
 		5E25A0D41B5416F10069D163 /* MacControlServer */ = {
 			isa = PBXGroup;
 			children = (
+				5E7C8A011B5419B5009D4EDA /* Mouse Keyboard Events */,
+				5E7C89FD1B5418FD009D4EDA /* GCDAsyncSocket */,
 				5E25A0D71B5416F10069D163 /* AppDelegate.h */,
 				5E25A0D81B5416F10069D163 /* AppDelegate.m */,
+				5E7C89F71B541800009D4EDA /* MCAppManager.h */,
+				5E7C89F81B541800009D4EDA /* MCAppManager.m */,
 				5E25A0DC1B5416F10069D163 /* ViewController.h */,
 				5E25A0DD1B5416F10069D163 /* ViewController.m */,
 				5E25A0DF1B5416F10069D163 /* Images.xcassets */,
@@ -114,6 +127,24 @@
 				5E25A0ED1B5416F10069D163 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E7C89FD1B5418FD009D4EDA /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				5E7C89FA1B5418F6009D4EDA /* GCDAsyncSocket.h */,
+				5E7C89FB1B5418F6009D4EDA /* GCDAsyncSocket.m */,
+			);
+			name = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		5E7C8A011B5419B5009D4EDA /* Mouse Keyboard Events */ = {
+			isa = PBXGroup;
+			children = (
+				5E7C89FE1B5419AA009D4EDA /* MCMouseKeyboardController.h */,
+				5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */,
+			);
+			name = "Mouse Keyboard Events";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +191,7 @@
 		5E25A0CA1B5416F10069D163 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Stoyan Stoyanov";
 				TargetAttributes = {
@@ -216,7 +248,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E25A0DE1B5416F10069D163 /* ViewController.m in Sources */,
+				5E7C89FC1B5418F6009D4EDA /* GCDAsyncSocket.m in Sources */,
+				5E7C89F91B541800009D4EDA /* MCAppManager.m in Sources */,
 				5E25A0DB1B5416F10069D163 /* main.m in Sources */,
+				5E7C8A001B5419AA009D4EDA /* MCMouseKeyboardController.m in Sources */,
 				5E25A0D91B5416F10069D163 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +442,7 @@
 				5E25A0F41B5416F10069D163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E25A0F51B5416F10069D163 /* Build configuration list for PBXNativeTarget "MacControlServerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +451,7 @@
 				5E25A0F71B5416F10069D163 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
