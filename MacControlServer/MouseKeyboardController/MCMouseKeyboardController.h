@@ -19,4 +19,5 @@
 -(void) mouseReleaseLeft;
 -(void) mouseHoldRight;
 -(void) mouseReleaseRight;
+-(void) pressKey:(uint16_t)key;
 @end
