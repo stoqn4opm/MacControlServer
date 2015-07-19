@@ -11,7 +11,7 @@
 #import "MouseKeyboardController/MCMouseKeyboardController.h"
 
 // Config
-#define TIMEOUT 5
+#define TIMEOUT 5000
 #define PORT    2222
 
 /*

@@ -16,6 +16,7 @@
 		5E7C89F91B541800009D4EDA /* MCAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89F81B541800009D4EDA /* MCAppManager.m */; };
 		5E7C89FC1B5418F6009D4EDA /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89FB1B5418F6009D4EDA /* GCDAsyncSocket.m */; };
 		5E7C8A001B5419AA009D4EDA /* MCMouseKeyboardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */; };
+		5EAB1E1B1B5AF3EF00422C63 /* CGKeyCodes.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EAB1E1A1B5AF3EF00422C63 /* CGKeyCodes.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5E7C89FB1B5418F6009D4EDA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = GCDAsyncSocket/GCDAsyncSocket.m; sourceTree = "<group>"; };
 		5E7C89FE1B5419AA009D4EDA /* MCMouseKeyboardController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMouseKeyboardController.h; path = MouseKeyboardController/MCMouseKeyboardController.h; sourceTree = "<group>"; };
 		5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMouseKeyboardController.m; path = MouseKeyboardController/MCMouseKeyboardController.m; sourceTree = "<group>"; };
+		5EAB1E1A1B5AF3EF00422C63 /* CGKeyCodes.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = CGKeyCodes.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				5E7C89FE1B5419AA009D4EDA /* MCMouseKeyboardController.h */,
 				5E7C89FF1B5419AA009D4EDA /* MCMouseKeyboardController.m */,
+				5EAB1E1A1B5AF3EF00422C63 /* CGKeyCodes.strings */,
 			);
 			name = "Mouse Keyboard Events";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E25A0E01B5416F10069D163 /* Images.xcassets in Resources */,
+				5EAB1E1B1B5AF3EF00422C63 /* CGKeyCodes.strings in Resources */,
 				5E25A0E31B5416F10069D163 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
