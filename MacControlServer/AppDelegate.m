@@ -18,6 +18,14 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
     [[MCAppManager sharedInstance] startListening];
+//    MCMouseKeyboardController *contrl = [MCMouseKeyboardController new];
+//    [contrl mouseHoldLeft];
+//    for (int i = 0; i < 300; i++) {
+//
+//        [contrl moveMouseOneUnitLeft];
+//        [contrl moveMouseOneUnitUP];
+//    }
+//    [contrl mouseReleaseLeft];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
